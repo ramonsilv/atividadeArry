@@ -41,18 +41,19 @@ for (i = 0; i < alunos.length; i++) {
     nota.push(notaalunos.toFixed(1))
 
     //HARD CODE
-    //nota.push((Math.random()*10).toFixed(1)) //(EXERCICIO 11)
+    // nota.push((Math.random()*10).toFixed(1)) //(EXERCICIO 11)
 }
 // console.log(nota) //(EXERCICIO 11)
 
 nota = nota.map(notas => notas +1) // (EXERCICO 12)
+// console.log(nota)                  // (EXERCICO 12) 
 
 maiorQSete = nota
 maiorQSete = maiorQSete.filter(variavel => variavel > 7) // (EXERCICO 13) 
 
 boletim = alunos.map((aluno, index) => `${aluno} - Nota ${nota[index]}`)
 
-boletimOrganizado = boletim.join('/n')
+boletimOrganizado = boletim.join('\n')
 // console.log(boletim) //RESULTADO 10-13
 // console.log(boletimOrganizado) //RESULTADO 10-13
 
@@ -60,7 +61,7 @@ for(i = 0; i < alunos.length; i++) {
     let nome = alunos [i]
     let notas = nota [i]
 
-    // console.log('Aluno: '+ nome + " - Nota: " + notas )//(14)
+    // console.log('Aluno: '+ nome + " - Nota: " + notas )//(EXERCICIO 14)
 }
 
 nota.forEach(notinha => {
@@ -83,5 +84,5 @@ let soma = nota.reduce((acumulador, item) => acumulador += item)//(EXEXRCICIO 19
 let media = soma / nota.length
 // console.log(media)   //(EXERCICIO 19)
 
-console.log(nota.every(nota => nota >= media)) //(EXERCICIO 20)
-console.log(nota.some(nota => nota > media)) //(EXERCICIO 21)
+// console.log(nota.every(nota => nota >= media)) //(EXERCICIO 20)
+// console.log(nota.some(nota => nota > media)) //(EXERCICIO 21)
