@@ -79,6 +79,9 @@ let nerd = nota.findIndex(notas => notas > 9)
 
 // console.log(alunos.includes("LUCAS"))//(18)
 
-let soma = nota.reduce((acumulador, item) => acumulador += item)//(19)
+let soma = nota.reduce((acumulador, item) => acumulador += item)//(EXEXRCICIO 19)
 let media = soma / nota.length
-// console.log(media)
+// console.log(media)   //(EXERCICIO 19)
+
+console.log(nota.every(nota => nota >= media)) //(EXERCICIO 20)
+console.log(nota.some(nota => nota > media)) //(EXERCICIO 21)
